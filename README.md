@@ -1,64 +1,27 @@
-MCP Server Tweet Dots in JavaScript
-===================================
+# MCP Server Tweet Dots (JavaScript)  
 
-A simple JavaScript project that simulates "tweet dots" (animated dots) for an MCP (Multi-Connection Protocol) server status display.
+[![npm version](https://img.shields.io/npm/v/mcp-tweet-dots.svg?style=flat-square)](https://www.npmjs.com/package/mcp-tweet-dots) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-Features
---------
+A lightweight JavaScript library to animate ellipsis dots (e.g., `...`) for MCP (Multi-Connection Protocol) server status indicators. Perfect for CLI tools, web apps, or loading screens.  
 
--   Smooth animated dots for visual feedback
+![Demo](https://user-images.githubusercontent.com/.../demo.gif) *(Replace with actual GIF link)*  
 
--   Customizable speed and dot count
+---
 
--   Lightweight and easy to integrate
+## 🚀 Features  
+- ✅ Smooth, configurable dot animations  
+- ✅ Zero dependencies  
+- ✅ Works in browsers **and** Node.js  
+- ✅ Customizable speed, dot count, and styles  
+- ✅ Pause/resume controls  
 
--   Works in browsers and Node.js (with appropriate rendering)
+---
 
-Installation
-------------
+## 📦 Installation  
 
-bash
-
-Copy
-
-Download
-
+### Via NPM/Yarn:  
+```bash
 npm install mcp-tweet-dots
-
-Or include directly in HTML:
-
-html
-
-Copy
-
-Download
-
-Run
-
-<script src="mcp-tweet-dots.js"></script>
-
-Usage
------
-
-javascript
-
-Copy
-
-Download
-
-import { TweetDots } from 'mcp-tweet-dots';
-
-const dots = new TweetDots({
-  element: document.getElementById('status-indicator'), // Target DOM element
-  dotCount: 3, // Number of dots (default: 3)
-  speed: 300, // Animation speed in ms (default: 300)
-});
-
-dots.start(); // Begin animation
-dots.stop();  // Stop animation
-
-Example Output
---------------
-
-Displays:\
-`Connecting to MCP server...` followed by animated dots (`...` → `. ..` → `.. .` → `...`).
+# or
+yarn add mcp-tweet-dots
